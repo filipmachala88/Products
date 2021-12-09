@@ -1,8 +1,7 @@
-# Vanilla Repository
+# Full-Stack Repository
 
 <!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
 
-Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) websites
 
 ## How to use
 
