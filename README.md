@@ -6,7 +6,7 @@ Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanill
 
 ## How to use
 
-- to start these websites you need to have official server or server imitation like [XAMPP](https://www.apachefriends.org/index.html) or [Local](https://localwp.com/) etc.
+To start these websites you need to have official server or server imitation like [XAMPP](https://www.apachefriends.org/index.html) or [Local](https://localwp.com/) etc.
 
 ## License
 
