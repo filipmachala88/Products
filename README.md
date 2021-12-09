@@ -1,6 +1,11 @@
 # Full-Stack Repository
 
-<!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
+<!-- 
+
+Document created using [Markdown](https://www.markdownguide.org/getting-started/)
+- learn basic functions: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+ 
+-->
 
 Used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
 
