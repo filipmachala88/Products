@@ -15,7 +15,7 @@ To start these websites you need to have official server or server imitation lik
 
 ## License
 
-This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and it applies on every file in this repository
 
 ## Purpose
 
