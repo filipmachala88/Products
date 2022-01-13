@@ -1,0 +1,113 @@
+@mixin baseFont{
+    font-family: 'Alumni Sans', sans-serif;
+}
+// === light font ==
+@mixin lightLight {
+    color: $secondaryCol;
+    @include baseFont;
+    font-weight: 300;
+}
+@mixin lightRegular{
+    color: $secondaryCol;
+    @include baseFont;
+    font-weight: 500;
+}
+@mixin lightBold{
+    color: $secondaryCol;
+    @include baseFont;
+    font-weight: 700;
+}
+// === dark font ===
+@mixin darkLight{
+    color: $primaryCol;
+    @include baseFont;
+    font-weight: 300;
+}
+@mixin darkRegular{
+    color: $primaryCol;
+    @include baseFont;
+    font-weight: 500;
+}
+@mixin darkBold{
+    color: $primaryCol;
+    @include baseFont;
+    font-weight: 700;
+}
+// === special font ===
+@mixin addLight{
+    color: $tercialyCol;
+    @include baseFont;
+    font-weight: 300;
+}
+@mixin addRegular{
+    color: $tercialyCol;
+    @include baseFont;
+    font-weight: 500;
+}
+@mixin addBold{
+    color: $tercialyCol;
+    @include baseFont;
+    font-weight: 700;
+}
+// ==== INDEX ====
+@mixin buttonRulesDark{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $tercialyCol;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+    @include darkRegular;
+    &:before{
+        content: "";
+        width: 120%;
+        height: 100%;
+        background: $tercialyCol;
+        position: absolute;
+        top: 0;
+        left: -130%;
+        transition: 500ms ease;
+        transform: skew(-30deg);
+    }
+    &:hover:before{
+        left: -10%;
+    }
+    span{
+        font-size: 22px;
+        z-index: 5;
+    }
+}
+@mixin buttonRulesLight{
+    width: 150px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $tercialyCol;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+    z-index: 5;
+    @include lightLight;
+    &:before{
+        content: "";
+        width: 120%;
+        height: 100%;
+        background: $tercialyCol;
+        position: absolute;
+        top: 0;
+        left: -130%;
+        transition: 500ms ease;
+        transform: skew(-30deg);
+    }
+    &:hover:before{
+        left: -10%;
+    }
+    span{
+        font-size: 22px;
+        z-index: 5;
+    }
+}

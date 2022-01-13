@@ -1,0 +1,571 @@
+// === INTRO ===
+.tension-banner{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    .tension-banner-dark{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.90);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo-center{
+            span{
+                font-size: 25px;
+                @include lightLight;
+                text-align: center;
+                margin: 10px 0 0 15px;
+                display: block;
+            }
+        }   
+    }
+}
+.cookie-alert{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    background: $secondaryCol;
+    border-top: 2px solid $tercialyCol;
+    text-align: center;
+    padding: 0 0 8px 0;
+    p{
+        font-size: 22px;
+        @include darkRegular;
+    }
+    .button-side{
+        display: flex;
+        justify-content: center;
+        button{
+            border: 2px solid $tercialyCol;
+            background: transparent;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            transition: 0.25s;
+            @include darkRegular;
+            &:hover{
+                background: $tercialyCol;
+                transition: 0.25s;
+            }
+        }
+        a{
+            border: 2px solid $tercialyCol;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: 0.25s;
+            @include darkRegular;
+            &:hover{
+                background: $tercialyCol;
+                transition: 0.25s;
+            }
+        }
+    }
+}
+.cookie-alert.dark-theme{
+    background: $primaryCol;
+    border-top: 1px solid $tercialyCol;
+    p{
+        @include lightLight;
+    }
+    .button-side{
+        button{
+            border: 1px solid $tercialyCol;
+            @include lightLight;
+        }
+        a{
+            @include lightLight;
+            border: 1px solid $tercialyCol;
+        }
+    }
+}
+.cookie-close{
+    display: none;
+}
+// ==== SLIDER ====
+.carousel-div{
+    width: 100%;
+    height: 100vh;
+    @include sliderBG;
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+.slide{
+    height: 100%;
+}
+// you have to style exactly as it is in Bootstrap extern stylesheet
+.carousel-inner, .carousel-item{
+    height: 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: auto;
+}
+.carousel-indicators{
+    height: 40px !important;
+    margin-bottom: 0;
+    [data-bs-target] {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $trans;
+        border: 1px solid $primaryCol;
+        opacity: 1;
+        margin: 18px 5px 0 5px;
+        box-sizing: inherit;
+        &:hover{
+            background: $tercialyCol;
+            border: 1px solid $tercialyCol;
+            transition: 0.25s;
+        }
+    }
+    .active{
+        background: $primaryCol;
+    }
+    .background{
+        width: 80px;
+        background: $secondaryCol;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 60px 60px 0 0;
+    }
+}
+.carousel-indicators.dark-theme{
+    [data-bs-target]{
+        border: 1px solid $secondaryCol;
+    }
+    .active{
+        background: $secondaryCol;
+    }
+    .background{
+        background: $primaryCol;
+    }
+}
+.container{
+	max-width: 1170px;
+	margin:auto;	
+}
+.slide-content{
+	width: 85%;
+    height: 100%;
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+    display: flex;
+}
+// my own elements
+.slider-column-first{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .event-topic{
+        margin: 0 0 30px 0;
+        h2{
+            font-size: 70px;
+            text-align: left;
+            @include addLight;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 25px;
+            @include lightLight;
+            width: 80%;
+            padding-left: 30px;
+            border-left: 3px solid $tercialyCol;
+        }
+    }
+    .event-info{
+        margin-top: 50px;
+        display: flex;
+        .event-topic{
+            p{
+                font-size: 25px;
+                border: none;
+                @include lightLight;
+            }
+        }
+        .event-icon{
+            svg{
+                fill: $quinaryCol;
+                height: 40px;
+                width: 40px;
+                margin-top: 10px;
+            }
+        }
+        .event-descr{
+            width: 100%;
+            margin-left: 30px;
+            ul{
+                li{
+                    list-style: none;
+                    span{
+                        font-size: 20px;
+                        @include lightLight;
+                    }
+                }
+            }
+        }
+    }
+    .slider-button{
+        margin-top: 100px;
+        @include buttonRulesLight;
+    }
+    a{
+        width: 150px;
+        text-decoration: none;
+        display: block;
+    }
+}
+.slider-column-second{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 0;
+        height: 550px;
+        width: auto;
+        opacity: 0.75;
+    }
+}
+// ==== index ABOUT ====
+.index-about{
+    padding: 40px 0 0 0;
+    display: flex;
+    .about-text-side{
+        z-index: 2;
+        width: 50%;
+        h1{
+            font-size: 50px;
+            @include darkRegular;
+        }
+        .h1-spec{
+            margin-left: 10px;
+        }
+        img{
+            height: 100px;
+            width: auto;
+            display: block;
+            margin: 50px auto 0 auto;
+            opacity: 0.8;
+        }
+        .about-topic{
+            display: flex;
+            img{
+                margin: -10px 0 0 10px;
+                height: 60px;
+            }
+        }
+        .about-img{
+            width: 80%;
+            margin-left: 10px;
+        }
+        .text{
+            width: 80%;
+            margin: 30px 0 100px 0;
+            padding: 0 0 0 30px;
+            border-left: 3px solid $tercialyCol;
+            p{
+                font-size: 25px;
+                margin-bottom: 20px;
+                @include darkLight;
+            }
+        }
+    }
+    .about-img-side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .img-center{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            .tension-members{   
+                z-index: 2;
+                height: 420px;
+                width: auto;
+                margin: 0 auto 0 auto;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .about-logo-bg{
+            position: absolute;
+            bottom: 0;
+            height: 300px;
+            width: auto;
+            z-index: 1;
+            opacity: 0.35;
+        }
+    }
+}
+.index-about.dark-theme{
+    .about-text-side{
+        h1{
+            @include lightLight;
+        }
+        .text{
+            p{
+                @include lightLight;
+            }
+        }
+    }
+}
+.background-effect-one{
+    position: absolute;
+    width: auto;
+    height: 200px;
+    margin: -140px 0 0 -180px;
+    img{
+        height: 200px;
+        width: auto;
+        transform: rotate(30deg);
+        z-index: 1;
+        opacity: 0.15;
+    }   
+}
+.background-effect-one.dark-theme, .background-effect-two.dark-theme{
+    img{
+        opacity: 1;
+    }
+}
+// ==== index ADVERT ====
+.container-advert{
+    @include advertBG;
+    z-index: 2;
+    .advert-darken{
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+    }
+    .advert{
+        padding: 60px 0 80px 0;
+        display: flex;
+        img{
+            display: block;
+            height: 30px;
+            width: auto;
+            margin: -5px auto 0 auto;
+            transform: rotate(2deg);
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            @include addLight;
+        }
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: $quinaryCol;
+        }
+        a{
+            text-decoration: none;
+        }
+        .advert-icon{
+            width: 30px;
+            height: 30px;
+            margin: 30px auto 30px auto;
+        }
+        .advert-desc{
+            margin: 0 auto;
+            width: 70%;
+            p{
+                font-size: 25px;
+                text-align: center;
+                margin: 10px 0 60px 0;
+                @include lightLight;
+            }
+            strong{
+                font-size: 25px;
+                @include addLight;
+            }
+        }
+        .advert-button{
+            margin: 0 auto 0 auto;
+            @include buttonRulesLight;
+        }
+        .advert-first-column{
+            width: 50%;
+        }
+        .advert-second-column{
+            width: 50%;
+        }
+    }
+}
+// ==== index GALERY ====
+.galery{
+    padding: 40px 0 80px 0;
+    .topic{
+        z-index: 2;
+        display: block;
+        h1{
+            font-size: 50px;
+            margin-bottom: 30px;
+            @include darkRegular;
+        }
+        strong{
+            @include addLight;
+        }
+    }
+    .galery-text{
+        display: flex;
+        p{
+            font-size: 25px;
+            @include darkLight;
+        }
+        .text-one{
+            display: flex;
+            width: 50%;
+            padding: 0 0 0 30px;
+            border-left: 3px solid $tercialyCol;
+        }
+    }
+    .galery-images{
+        margin: 40px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .galery-images-resp{
+            display: flex;
+            width: 50%;
+        }
+        .box{
+            position: relative;
+            width: 50%;
+            height: 300px;
+            overflow: hidden;
+            transition: 0.5s;
+            &:hover{
+                z-index: 1;
+                transform: scale(1.1);
+                box-shadow: 0 25px 40px rgba(0,0,0,.5); 
+            }
+            &:hover .imgBx:before{
+                opacity: 1;
+            }
+            .content{
+                position: absolute;
+                top: 140px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                h2{
+                    font-size: 30px;
+                    transition: 0.5s;
+                    margin-bottom: 5px;
+                    padding: 0 20px;
+                    @include lightLight;
+                    transform: translateY(300px);
+                }
+                p{
+                    font-size: 18px;
+                    transition: 0.5s;
+                    padding: 0 20px;
+                    @include lightLight;
+                    transform: translateY(300px);
+                }
+            }
+            &:hover .content h2{
+                transform: translateY(0);
+                transition-delay: 0.1s;
+            }
+            &:hover .content p{
+                transform: translateY(0);
+                transition-delay: 0.2s;
+            }
+            .imgBx{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background: linear-gradient(180deg, $tercialyCol, $primaryCol);
+                    mix-blend-mode: multiply;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+    .button-href{
+        width: 130px;
+        margin: 0 auto;
+        a{
+            text-decoration: none;
+            width: 130px;
+            .galery-button{
+                margin: 0px auto 0 auto;
+                @include buttonRulesDark;
+            }
+        }
+    }
+}
+.galery.dark-theme{
+    h1{
+        @include lightLight;
+    }
+    .galery-text{
+        p{
+            @include lightLight;
+        }
+    }
+    .button-href{
+        a{
+            .galery-button{
+                @include buttonRulesLight;
+            }
+        }
+    }
+}
+.background-effect-two{
+    position: relative;
+    width: auto;
+    height: 200px;
+    margin: -80px 0 -120px 50%;
+    img{
+        height: 200px;
+        width: auto;
+        transform: rotate(30deg);
+        z-index: 1;
+        opacity: 0.15;
+    }
+}
+.image-active-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#image-active{
+    height: 50px;
+    width: auto;
+}

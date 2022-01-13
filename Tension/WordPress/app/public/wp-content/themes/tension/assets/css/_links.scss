@@ -1,0 +1,19 @@
+@mixin logoBG{
+    background: url("http://tension.local/wp-content/themes/tension/assets/img/logo-trans.png") no-repeat;
+}
+@mixin logoBGhover{
+    background: url("http://tension.local/wp-content/themes/tension/assets/img/logo-trans-hover.png") no-repeat;
+}
+// === FRONT PAGE ===
+@mixin sliderBG{
+    background: url("http://tension.local/wp-content/themes/tension/assets/img/slider-bg.jpg");
+    background-size: cover;
+}
+@mixin advertBG{
+    background: url("http://tension.local/wp-content/themes/tension/assets/img/city.jpg") center no-repeat;
+    background-size: cover;
+}
+@mixin footerBG{
+    background: url("http://tension.local/wp-content/themes/tension/assets/img/footer-img.png") center no-repeat;
+    background-size: cover;
+}

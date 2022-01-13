@@ -1,0 +1,213 @@
+// ==== FOOTER ====
+.footer-container{
+    @include footerBG;
+}
+.footer-dark{
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+}
+.footer{
+    padding: 40px 0 60px 0;
+    display: flex;
+    .footer-responsive{
+        width: 50%;
+        display: flex;
+    }
+    .footer-column{
+        width: 40%;
+    }
+    .column-one{
+        .owner-info{
+            padding-bottom: 10px;
+            border-bottom: 1px solid $tercialyCol;
+            .logo-box-footer{
+                width: 120px;
+                height: auto;
+                margin-left: 10px;
+                .logo-contain{
+                    img{
+                        height: auto;
+                        width: 120px;
+                    }
+                }    
+                .logo-base-footer{
+                    display: flex;
+                }
+                .logo-hover-footer{
+                    display: none;
+                }
+            }
+            span{
+                font-size: 25px;    
+                @include lightLight;
+            }
+        }
+        .theme-change{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .theme-box{
+                background: $primaryCol;
+                display: flex;
+                border-radius: 40px;
+                .light-theme{
+                    padding: 5px 5px 7px 8px;
+                    cursor: pointer;
+                    svg{
+                        fill: $light;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+                .dark-theme{
+                    padding: 5px 8px 7px 5px;
+                    cursor: pointer;
+                    svg{
+                        fill: $light;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+                .ball{
+                    position: absolute;
+                    background: $secondaryCol;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    margin: 4px 0 0 5px;
+                    transition: 0.33s;
+                }
+            }
+        }
+    }
+    .column-two{
+        margin-left: 15%;
+        h2{
+            margin: 0;
+            font-size: 30px;
+            @include addRegular;
+        }
+        .page-active{
+            a{
+                color: $tercialyCol !important;
+            }
+        }
+        li{
+            list-style: none;
+            margin: 13px 0;
+        }
+        a{
+            font-size: 22px;
+            @include lightLight;
+            text-decoration: none;
+            transition: 0.33s;
+            &:hover{
+                color: $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+    }
+    .column-three{
+        margin-right: 20%;
+        h2{
+            margin: 0;
+            font-size: 30px;
+            padding-bottom: 10px;
+            @include addRegular;
+        }
+    }
+    .social-sites{
+        border-top: 1px solid $secondaryCol;
+        padding-top: 10px;
+        a{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            color: $primaryCol;
+            text-decoration: none;
+            &:not(:first-child){
+                margin-left: 10px;
+            }
+        }
+        .icon-hover{
+            height: 45px;
+            width: 45px;
+            background: $tercialyCol;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            &:before{
+                content: "";
+                width: 120%;
+                height: 100%;
+                background: $secondaryCol;
+                position: absolute;
+                top: 0;
+                left: -130%;
+                transition: 500ms ease;
+                transform: skew(-30deg);
+            }
+            &:hover:before{
+                left: -10%;
+            }
+        }
+        .div-insta{
+            margin-left: 20px;
+        }
+        svg{
+            height: 20px;
+            width: 20px;
+            fill: $primaryCol;
+            z-index: 5;
+            margin: -2px 0 0 1px;
+        }
+        // facebook svg icon illustrator class
+        .facebook-special{
+            fill:none;
+            stroke:#010202;
+            stroke-width:2.1;
+            stroke-miterlimit:10;
+        }
+        .social-icon-flex{
+            display: flex;
+        }
+        p{
+            font-size: 22px;
+            @include lightLight;
+            padding-bottom: 13px;
+        }
+    }
+    .column-four{
+        .shot-out{
+            display: flex;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $tercialyCol;
+        }
+        a{
+            font-size: 22px;
+            margin-left: 5px;
+            text-decoration: none;
+            transition: 0.33s;
+            @include lightLight;
+            &:hover{
+                @include addLight;
+                transition: 0.33s;
+            }
+        }
+        .shot-out-text{
+            font-size: 22px;
+            padding: 0 !important;
+            @include lightLight;
+        }
+        .shot-out-special{
+            padding-top: 10px;
+            color: $quinaryCol !important;
+            font-size: 22px;
+            @include lightLight;
+        }
+    }
+
+}

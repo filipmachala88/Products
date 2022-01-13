@@ -1,0 +1,220 @@
+// ==== HEADER ====
+// logo
+.nav-logo-part{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .logo-box{
+        width: 70px;
+        height: 50px;
+        margin-left: 15px;
+        .logo-contain{
+            width: 70px;
+            height: 50px;
+            img{
+                height: 50px;
+                width: 70px;
+            }
+        }    
+        .logo-base{
+            display: flex;
+        }
+        .logo-hover{
+            display: none;
+        }
+    }
+    span{
+        @include lightLight;
+        font-size: 18px;
+    }
+}
+// navigation
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 10;
+    transition: 0.33s;
+    .intern-container{
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3px;
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                list-style: none;
+                margin: 0 15px;
+                font-size: 25px;
+                a{
+                    @include lightLight;
+                    text-decoration: none;
+                    padding: 5px;
+                    &:hover{       
+                        color: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+    }
+    .eshop-part, .eshop-part-resp{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            .page-active{
+                svg{
+                    fill: $tercialyCol;
+                }
+            }
+            .nav-special-icon{
+                padding: 0;
+                a{
+                    padding: 10px;
+                }
+            }
+            li{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                    svg{       
+                        fill: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    fill: $secondaryCol;
+                }
+            }
+        }
+    }
+    
+}
+.nav-active{
+    background: $primaryCol;
+    transition: 0.33s;
+}
+.sidebar-active{
+    height: 140px;
+}
+.nav-responsive{
+    display: none;
+}
+// icons
+.header-menu-responsive{
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,.93);
+    margin-left: 50%;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+    .navigation-responsive{
+        width: 100%;
+        ul{
+            li{
+                padding: 20px 0;
+                list-style: none;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    font-size: 30px;
+                    transition: 0.25s;
+                    @include lightLight;
+                    &:hover{
+                        @include addLight;
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+    }
+}
+.current-menu-item a, .current-post-parent a{
+    color: $tercialyCol !important;
+}
+// search bar
+.nav-sidebar{
+    width: 100%;
+    display: none;
+    .sidebar-content{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-sidebar-search{
+        width: 500px;
+        display: flex;
+        .search-fixed{
+            display: flex;
+        }
+    }
+    .searchform{
+        width: 490px;
+        margin: 0 auto;
+    }
+    #s{
+        width: 400px;
+        border: 1px solid $secondaryCol;
+        background: none;
+        outline: none;
+        font-size: 20px;
+        padding: 1px 8px;
+        transition: 0.33s;
+        @include lightLight;
+        &:focus{
+            border: 1px solid $tercialyCol;
+        }
+    }
+    #searchsubmit{
+        width: 80px;
+        height: 100%;
+        border: 1px solid $secondaryCol;
+        background: none;
+        font-size: 20px;
+        margin-left: 5px;
+        transition: 0.33s;
+        @include lightLight;
+        &:hover{
+            @include addLight;
+            border: 1px solid $tercialyCol;
+        }
+    }
+    .search-cross{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+        margin: 2px 0 0 0;
+        transition: 0.33s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: $secondaryCol;
+        }
+        &:hover{
+            svg{
+                fill: $tercialyCol;
+                transition: 0.25s;
+            }
+        }
+    }
+}

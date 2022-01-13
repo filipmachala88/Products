@@ -1,0 +1,924 @@
+// page-topic
+.page-topic{
+    @include sliderBG;
+    .dark{
+        padding: 160px 0 70px 0;
+    }
+    a{
+        text-decoration: none;
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        @include addLight;
+        &:hover{
+            color: $secondaryCol;
+            transition: 0.33s;
+        }
+    }
+    .topic-text{
+        display: flex;
+        p{
+            font-size: 25px;
+            @include lightLight;
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            font-size: 25px;
+            margin-left: 10px;
+            @include lightRegular;
+        }
+    }
+    ul{
+        list-style: none;
+        width: auto;
+    }
+    h2{
+        font-size: 70px;
+        @include addLight;
+    }    
+    .topic-topic{
+        display: flex;
+        .category-flex{
+            display: flex;
+            .special-tag{
+                @include lightLight;
+                font-size: 40px;
+                margin: 15px 15px 0 16px;
+            }
+        }
+    }
+}
+// page-category
+.img-part{
+    margin: 50px 0;    
+    a{
+        text-decoration: none;
+        background: rgba(0,0,0,.7);
+    }
+    p{
+        line-height: 1.5;
+    }
+    .img-row{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .img-row:not(:first-child){
+        margin-top: 2.3%;
+    }
+    .img-hover{
+        width: 32%;
+        height: auto;
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+    .img-hover:hover img{
+        transition: 0.33s;
+        transform: scale(1.2);
+    }
+    img{
+        width: 100%;
+        height: auto;
+        transition: 0.33s;
+        display: block;
+    }
+    h3{
+        font-size: 15px;
+        color: white;
+    }
+    .element-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5%;
+    }
+    .text-side{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        h2{
+            font-size: 40px;
+            margin: 0;
+            @include addLight;
+        }
+        p{
+            font-size: 20px;
+            @include lightLight;
+        }
+    }
+    .tags-side{
+        display: flex;
+        svg{
+            width: 23px;
+            height: 23px;
+            fill: $tercialyCol;
+            margin: 4px 2px 0 0;
+        }
+        span{
+            font-size: 20px;
+            @include lightLight;
+            margin-left: 10px;
+        }
+    }
+    .post-edit{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        a{
+            background: none;
+            @include addLight;
+            font-size: 20px;
+        }
+    }
+    .post-info{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        p{
+            @include lightLight;    
+        }
+        a{
+            @include addLight;
+            margin-left: 5px;
+        }
+    }
+}
+// page-single
+.single-page{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    .single-column-one{
+        width: 49%;
+        margin-right: 1%;
+        .single-tags{
+            background: $primaryCol;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            svg{
+                fill: $tercialyCol;
+                height: 25px;
+                width: 25px;
+                margin: 6px 0 0 10px;
+            }
+            span{
+                @include lightLight;
+                font-size: 25px;
+                margin-left: 15px;
+            }
+        }
+        .single-content{
+            margin-top: 30px;    
+            p{
+                @include darkLight;
+                font-size: 30px;
+            }
+            h3{
+                @include darkRegular;
+                font-size: 30px;
+            }
+            .under-text{
+                border-left: 2px solid $tercialyCol;
+                padding: 0 0 0 15px;
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+        .size-box{
+            display: flex;
+            .single-sizes{
+                div{
+                    margin: 20px 0 0 0;
+                    padding: 10px;
+                    background: $senaryCol;
+                    width: 240px;
+                    display: flex;
+                    justify-content: center;
+                }
+                li{
+                    display: inline-flex;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        list-style: none;
+                        color: $primaryCol;
+                        background: $secondaryCol;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background: $tercialyCol;
+                            cursor: pointer;
+                        }   
+                    }
+                }
+            }
+            .single-sizing{
+                button{
+                    height: 40px;
+                    border: none;
+                    background: $senaryCol;
+                    margin: 30px 0 0 20px;
+                    border-radius: 10px;
+                    @include darkLight;
+                    font-size: 22px;
+                    &:hover{
+                        background: $tercialyCol;
+                        transition: 0.33s;
+                    }
+                    span{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .single-avai{
+            margin: 10px 0;
+            @include darkLight;
+            font-size: 30px;
+            span:not(:first-child){
+                margin-left: 20px;
+                color: $true;
+            }
+        }
+        .single-customer{
+            margin: 40px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            .single-price{
+                font-size: 40px;
+                @include darkRegular;
+            }
+            .single-cart{    
+                button{
+                    height: 100%;
+                    width: auto;
+                    background: $true;
+                    border: none;
+                    border-radius: 10px;
+                    span{
+                        font-size: 30px;
+                        margin: 0 20px;
+                        @include lightRegular;
+                    }
+                    &:hover{
+                        background: $trueHover;
+                        transition: 0.33s;
+                    }
+                }
+            }
+        }
+    }
+    .single-column-two{
+        width: 49%;
+        margin-left: 1%;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .img-one{
+            display: flex;
+        }
+        .img-two{
+            display: none;
+        }
+        .img-counter{
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            background: $secondaryCol;
+            font-size: 20px;
+            width: 45px;
+            @include darkRegular;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            span{
+                font-size: 20px;
+            }
+        }
+        .single-map{
+            margin-top: 30px;
+        }
+    }
+}
+.single-page.dark-theme{
+    .single-column-one{
+        .single-tags{
+            background: $secondaryCol;
+            span{
+                @include darkRegular;
+            }
+        }
+        .single-content{
+            p{
+                @include lightLight;
+            }
+            h3{
+                @include lightRegular;
+            }
+        }
+        .single-avai{
+            @include lightLight;
+        }
+        .single-customer{
+            .single-price{
+                @include lightRegular;
+            }
+        }
+    }
+}
+// galery.html
+.galery-page{
+    .img-part{
+        margin: 50px 0; 
+        .img-row{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .img-row:not(:first-child){
+            margin-top: 2.3%;
+        }
+        .img-hover{
+            width: 32%;
+            height: auto;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .img-hover:hover{
+            img{
+                transform: scale(1);
+            }
+            .element-item{
+                background: $trans;
+                transition: 0.33s;
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+            transition: 0.33s;
+            display: block;
+        }
+        h3{
+            font-size: 15px;
+            color: white;
+        }
+        .element-item{
+            background: rgba(0,0,0,.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 5%;
+        }
+    }
+}
+// contact.html
+.contact{
+    width: 100%;
+    display: flex;
+    margin: 50px 0 0 0;
+    .contact-column-one{
+        width: 50%;
+        .text{
+            border-left: 3px solid $tercialyCol;
+            padding-left: 30px;
+            span{
+                font-size: 25px;
+                @include darkLight;
+            }
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            @include darkRegular;
+        }
+    }
+    .contact-column-two{
+        width: 50%;
+        .text{
+            border-left: 3px solid $tercialyCol;
+            padding-left: 30px;
+            p{
+                font-size: 25px;
+                @include darkLight;
+            }
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            @include darkRegular;
+        }
+        span{
+            font-size: 25px;
+            @include darkLight;
+        }
+        
+    }
+    .contact-form{
+        background: $senaryCol;
+        width: 100%;
+        padding: 50px 30px;
+        margin: 40px 0;
+        border-radius: 30px;
+        box-shadow: 0 25px 40px rgba(0,0,0,.5);
+        span{
+            font-size: 25px;
+            @include darkLight;
+        }
+        strong{
+            @include addLight;
+            margin: 0 0 0 3px;
+            font-size: 20px;
+        }
+        input, textarea{
+            padding: 5px 10px;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid $primaryCol;
+            background: $trans;
+            @include darkRegular;
+            &:focus{
+                border: 1px solid $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+        input[type="name"]{
+            width: 100%;
+        }
+        input[type="email"]{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+        }
+        .contact-form-button{
+            margin: 10px auto 0 auto;
+            @include buttonRulesDark;
+            input[type="submit"]{
+                background: none;
+                width: 100%;
+                height: 40px;
+                border: none;
+                font-size: 25px;
+                z-index: 6;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+.contact.dark-theme{
+    .contact-column-one{
+        h1{
+            @include lightLight;
+        }
+        .text{
+            span{
+                @include lightLight;
+            }
+        }
+    }
+    .contact-column-two{
+        h1{
+            @include lightLight;
+        }
+        .text{
+            p{
+                @include lightLight;
+            }
+        }
+        .contact-form{
+            background: $quaternaryCol;
+            span{
+                font-size: 25px;
+                @include lightLight;
+            }
+            input, textarea{
+                border: 1px solid $secondaryCol;
+                @include lightLight;
+                &:focus{
+                    border: 1px solid $tercialyCol;
+                }
+            }
+            .contact-form-button{
+                @include buttonRulesLight;
+                input[type="submit"]{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+// form-send alert - wont work without database
+.contact-fixed{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact-sent{
+    width: 500px;
+    border: 1px solid $tercialyCol;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+    @include darkRegular;
+    font-size: 30px;
+    position: fixed;
+    background: white;
+    z-index: 3;
+    img{
+        height: 50px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .contact-special{
+        @include addRegular;
+    }
+}
+// sizes window
+.merch-sizes{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    .merch-sizes-darken{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sizes-box{
+            width: 600px;
+            padding: 15px 30px 10px 30px;
+            background: $secondaryCol;
+            border-radius: 10px;
+            display: flex;
+            table{
+                @include darkLight;
+                font-size: 25px;
+                text-align: center;
+                tr{
+                    padding: 0 5px;
+                    td:first-child{
+                        width: 120px;
+                        padding: 0 0 0 10px;
+                    }
+                    td:not(:first-child){
+                        width: 150px;
+                    }
+                    &:nth-child(odd){
+                        background: $special !important;
+                        color: $secondaryCol;
+                    }
+                }
+            }
+            .sizes-close-button{
+                margin: 4px 0 0 10px;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    svg{
+                        fill: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+                svg{
+                    height: 20px;
+                    width: 20px;
+                    fill: $primaryCol;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+// cart.html
+.cart{
+    padding: 50px 0;
+    .cart-content{
+        .item{
+            width: 100%;
+            display: flex;
+            background: $cart;
+            padding: 10px 20px;
+            border-radius: 10px;
+            &:hover{
+                background: $cartHover;
+            }
+            .item-info{
+                width: 100%;
+                font-size: 30px;
+                display: flex;
+                .item-image{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .item-name, .item-count, .item-size, .item-price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 5px;
+                }
+                .item-basics{
+                    display: flex;
+                    width: 60%;
+                }
+                .item-details{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .item-name{
+                    width: 100%;
+                    @include darkRegular;
+                }
+                // max 2 numbers (11 x)
+                .item-count{
+                    width: 80px;
+                    @include darkLight;
+                }
+                // max 3 words (AAA)
+                .item-size{
+                    width: 80px;
+                    @include darkLight;
+                }
+                // max 5 numbers (11 111 kč)
+                .item-price{
+                    width: 130px;
+                    @include darkLight;
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            .item-button{
+                display: flex;
+                align-items: center;
+                button{
+                    background: $tercialyCol;
+                    border: none;
+                    border-radius: 10px;
+                    span{
+                        font-size: 28px;
+                        margin: 0 20px;
+                        @include lightLight;
+                    }
+                    &:hover{
+                        background: $false;
+                        transition: 0.33s;
+                    }
+                }
+            }
+        }
+    }
+    .checkout{
+        display: flex;
+        justify-content: right;
+        margin-top: 50px;
+        .checkout-price{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            span{
+                @include darkRegular;
+                font-size: 30px;
+            }
+            span:first-child{
+                @include darkLight;
+                margin-right: 20px;
+            }
+        }
+        button{
+            height: 100%;
+            width: auto;
+            background: $true;
+            border: none;
+            border-radius: 10px;
+            span{
+                font-size: 30px;
+                margin: 0 20px;
+                @include lightLight;
+            }
+            &:hover{
+                background: $trueHover;
+                transition: 0.33s;
+            }
+        }
+    }
+}
+.cart.dark-theme{
+    .checkout{
+        .checkout-price{
+            span{
+                @include lightRegular;
+            }
+            span:first-child{
+                @include lightLight;
+            }
+        }
+    }
+}
+// === cookie.html, terms.html ===
+.cookies-content, .terms-content{
+    padding: 50px 0 60px 0;
+    .row{
+        ul{
+            list-style: decimal;
+        }
+        ol{
+            list-style: upper-alpha;
+        }
+        h2{
+            font-size: 40px;
+            @include darkRegular;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 25px;
+            @include darkLight;
+        }
+        a{
+            font-size: 25px;
+            @include addRegular;
+            text-decoration: none;
+            &:hover{
+                color: $false;
+                transition: 0.33s;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+.terms-content{
+    ul{
+        padding-left: 28px;
+    }
+}
+.profile{
+    .intern-container{
+        display: flex;
+    }
+    .column-one{
+        padding: 50px 0;
+        width: 50%;
+        .login-alert{
+            display: flex;
+            span{
+                @include darkLight;
+                font-size: 25px;
+                margin-left: 10px;
+            }
+            p{
+                @include darkRegular;
+                font-size: 30px;
+            }
+        }
+        .login-form{
+            margin-top: 30px;
+            span{
+                display: block;
+                font-size: 25px;
+                @include darkLight;
+            }
+            input{
+                width: 70%;
+                padding: 5px 10px;
+                margin: 0 0 10px 0;
+                font-size: 20px;
+                outline: none;
+                border: 1px solid $primaryCol;
+                background: $trans;
+                @include darkRegular;
+                &:focus{
+                    border: 1px solid $tercialyCol;
+                    transition: 0.33s;
+                }
+            }
+        }
+        .login-button{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            button{
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+                @include lightRegular;
+                font-size: 20px;
+            }
+            .register{
+                button{
+                    background: $false;
+                    &:hover{
+                        background: $tercialyCol;
+                        transition: 0.33s;
+                    }
+                }
+            }
+            .login{
+                margin-left: 15px;
+                button{
+                    background: $trueHover;
+                    &:hover{
+                        background: $true;
+                        transition: 0.33s;
+                    }
+                }
+            }
+        }
+        .forgot{
+            margin-top: 20px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            p{
+                font-size: 23px;
+                @include darkLight;
+            }
+            span{
+                font-size: 23px;
+                @include darkRegular;
+                margin-left: 10px;
+                cursor: pointer;
+                color: $false;
+                &:hover{
+                    color: $tercialyCol;
+                    transition: 0.33s;
+                }
+            }
+        }
+    }   
+    .column-two{
+        background: $tercialyCol;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.profile.dark-theme{
+    .login-alert{
+        span{
+            @include lightLight;
+        }
+        p{
+            @include lightRegular;
+        }
+    }
+    .login-form{
+        span{
+            @include lightLight;
+        }
+        input{
+            border: 1px solid $secondaryCol;
+            background: $trans;
+            @include darkLight;
+            &:focus{
+                border: 1px solid $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+    }
+    .forgot{
+        p{
+            @include lightLight;
+        }
+        span{
+            @include darkRegular;
+            color: $false;
+            &:hover{
+                color: $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+    }
+}

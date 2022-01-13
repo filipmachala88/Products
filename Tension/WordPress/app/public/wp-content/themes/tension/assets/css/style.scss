@@ -1,0 +1,40 @@
+// === GLOBAL IMPORTS ===
+@import "variables";
+@import "mixins";
+@import "links";
+// === GLOBAL RULES ===
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: $secondaryCol;
+}
+body.dark-theme{
+    background: $primaryCol;
+}
+p, ul, li, a, div, img, h1, h2, h3, span{
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.extern-container{
+    width: 100%;
+}
+.intern-container{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+// === GENERIC IMPORTS ===
+@import "header";
+@import "footer";
+// === PAGE IMPORTS ===
+@import "front-page";
+@import "page";
+
+@import "mediaQuery"; // have to be last
