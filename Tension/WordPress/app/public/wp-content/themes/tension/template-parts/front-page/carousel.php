@@ -26,7 +26,7 @@
                             foreach ($datas as $data){
                                 echo '
                                 <!-- slide -->
-                                <div class="carousel-item'; if ($data['tag'] == 'topic'){ echo ' ' . $data['class']; }  . '" data-bs-interval="5000">
+                                <div class="carousel-item'; if ($data['tag'] == 'topic'){ echo ' ' . $data['class']; } echo '" data-bs-interval="5000">
                                     <div class="slide-content">
                                         <div class="slider-column-first">
                                             <div>
