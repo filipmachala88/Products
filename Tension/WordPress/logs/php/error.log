@@ -92,3 +92,36 @@
 [13-Jan-2022 15:53:15 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 44
 [13-Jan-2022 15:53:15 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 44
 [13-Jan-2022 15:53:22 UTC] PHP Parse error:  syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 44
+[14-Jan-2022 15:33:57 UTC] PHP Parse error:  syntax error, unexpected '.' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 7
+[14-Jan-2022 15:33:59 UTC] PHP Parse error:  syntax error, unexpected '.' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 7
+[14-Jan-2022 15:36:19 UTC] PHP Parse error:  syntax error, unexpected '.' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 9
+[14-Jan-2022 15:50:01 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 29
+[14-Jan-2022 15:50:41 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 11
+[14-Jan-2022 15:50:42 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\topic.php on line 11
+[14-Jan-2022 17:13:31 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 44
+[14-Jan-2022 17:43:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 18
+[14-Jan-2022 17:43:16 UTC] PHP Stack trace:
+[14-Jan-2022 17:43:16 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[14-Jan-2022 17:43:16 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[14-Jan-2022 17:43:16 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[14-Jan-2022 17:43:16 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[14-Jan-2022 17:43:16 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\front-page.php:8
+[14-Jan-2022 17:43:16 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[14-Jan-2022 17:43:16 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[14-Jan-2022 17:43:16 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[14-Jan-2022 17:44:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 18
+[14-Jan-2022 17:44:21 UTC] PHP Stack trace:
+[14-Jan-2022 17:44:21 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[14-Jan-2022 17:44:21 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[14-Jan-2022 17:44:21 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[14-Jan-2022 17:44:21 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[14-Jan-2022 17:44:21 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\front-page.php:8
+[14-Jan-2022 17:44:21 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[14-Jan-2022 17:44:21 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[14-Jan-2022 17:44:21 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[14-Jan-2022 17:46:47 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 27
+[14-Jan-2022 17:47:16 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 27
+[14-Jan-2022 17:57:53 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 34
+[14-Jan-2022 17:58:10 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 34
+[14-Jan-2022 17:58:11 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 34
+[14-Jan-2022 18:06:59 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\front-page\carousel.php on line 29
