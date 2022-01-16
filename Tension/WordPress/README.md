@@ -1,6 +1,6 @@
 # WordPress [CMS](https://cs.wikipedia.org/wiki/Syst%C3%A9m_pro_spr%C3%A1vu_obsahu) custom Theme
 
-Status: Still in progress (not done yet)
+Status: Still in progress
 
 ## Process
 
