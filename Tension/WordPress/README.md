@@ -1,15 +1,15 @@
-# WordPress CMS custom Theme
+# WordPress [CMS](https://cs.wikipedia.org/wiki/Syst%C3%A9m_pro_spr%C3%A1vu_obsahu) custom Theme
 
 Status: Still in progress (not done yet)
 
 ## Process
 
 1. Edit files in accordance with WordPress (using [PHP](https://www.php.net/))
-- done
+- DONE
 - Theme path (code): app/public/wp-content/themes/tension
 
 2. Create DB (database) and connect with Theme (using [SQL](https://cs.wikipedia.org/wiki/SQL))
-- in progress (only front-page is full based on DB yet)
+- in progress: full front-page (display data) & contact form (sent data) done yet - working properly
 - DB path: app/sql/local.sql
 
 3. Download WooCommerce plugin and connect with Theme
