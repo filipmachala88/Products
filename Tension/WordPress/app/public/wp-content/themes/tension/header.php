@@ -24,34 +24,31 @@
     <!-- Bootstrap stylesheet import link (extern) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-	<?php
-	    wp_head();
-    ?>
+	<? wp_head(); ?>
     <title>
-        <?php
-            if(is_front_page()){
+        <?
+            if (is_front_page()){
+                bloginfo('name') ?> - <? bloginfo('description');
 
-                bloginfo('name') ?> - <?php bloginfo('description');
-
-            }elseif(is_category()){
-
-                bloginfo('name') ?> - <?php single_cat_title();
+            }
+            elseif (is_category()){
+                bloginfo('name') ?> - <? single_cat_title();
             
-            }elseif(is_single()){
+            }
+            elseif (is_single()){
+                bloginfo('name') ?> - <? the_title();
             
-                bloginfo('name') ?> - <?php the_title();
+            }
+            elseif (is_page()){
+                bloginfo('name') ?> - <? the_title();
             
-            }elseif(is_page()){
-             
-                bloginfo('name') ?> - <?php the_title();
+            }
+            elseif (is_search()){
+                bloginfo('name') ?> - Hledat<?
             
-            }elseif(is_search()){
-            
-                bloginfo('name') ?> - Hledat<?php
-            
-            }elseif(is_404()){
-            
-                bloginfo('name') ?> - Chyba 404<?php
+            }
+            elseif (is_404()){
+                bloginfo('name') ?> - Chyba 404<?
             
             }
         ?>
@@ -87,7 +84,7 @@
                         <?php 
                             foreach ($datas as $data){
                                 if ($data['tag'] == 'logo-text'){
-                                        echo '<span>' . $data['content'] . '</span>';
+                                    echo '<span>' . $data['content'] . '</span>';
                                 }
                             }
                         ?>
@@ -112,14 +109,12 @@
                     <?php 
                         foreach ($datas as $data){
                             if ($data['tag'] == 'icon-menu-spec'){
-                                    echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
+                                echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
 
                             }
-                        }
-                        foreach ($datas as $data){
-                            if ($data['tag'] == 'icon-menu'){
-                                    echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
-                                                <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
+                            elseif ($data['tag'] == 'icon-menu'){
+                                echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
+                                            <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
 
                             }
                         }
@@ -133,14 +128,12 @@
                         <?php 
                             foreach ($datas as $data){
                                 if ($data['tag'] == 'icon-menu-spec'){
-                                        echo '<li class="' . $data['class'] . '-resp" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
+                                    echo '<li class="' . $data['class'] . '-resp" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
 
                                 }
-                            }
-                            foreach ($datas as $data){
-                                if ($data['tag'] == 'icon-menu'){
-                                        echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
-                                                    <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
+                                elseif ($data['tag'] == 'icon-menu'){
+                                    echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
+                                                <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
 
                                 }
                             }
@@ -160,12 +153,12 @@
             <div class="nav-sidebar">
                 <div class="sidebar-content">
                     <div class="nav-sidebar-search">
-                        <?php get_search_form(); ?>
+                        <? get_search_form(); ?>
                     </div>
-                    <?php
+                    <?
                         foreach ($datas as $data){
                             if ($data['tag'] == 'side-bar'){
-                                    echo '<div class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</div>';
+                                echo '<div class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</div>';
 
                             }
                         }
@@ -178,7 +171,7 @@
     <div class="header-menu-responsive">
         <div class="navigation-responsive">
             <ul>
-                <?php
+                <?
                     wp_nav_menu(
                         array(
                             'menu' => 'header_menu',

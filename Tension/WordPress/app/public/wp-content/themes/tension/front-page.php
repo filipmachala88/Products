@@ -1,5 +1,4 @@
-<?php
-
+<?
     get_template_part('template-parts/page/connect','connect');
 
     get_header();
@@ -11,5 +10,4 @@
     get_template_part('template-parts/front-page/galery','galery');
 
     get_footer();
-
 ?>

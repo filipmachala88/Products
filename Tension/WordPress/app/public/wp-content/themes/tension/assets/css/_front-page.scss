@@ -395,10 +395,7 @@
             margin: 0 auto 0 auto;
             @include buttonRulesLight;
         }
-        .advert-first-column{
-            width: 50%;
-        }
-        .advert-second-column{
+        .advert-column{
             width: 50%;
         }
     }

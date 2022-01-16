@@ -1262,11 +1262,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   z-index: 5;
 }
 
-.container-advert .advert .advert-first-column {
-  width: 50%;
-}
-
-.container-advert .advert .advert-second-column {
+.container-advert .advert .advert-column {
   width: 50%;
 }
 
@@ -3399,13 +3395,11 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   .container-advert .advert {
     display: block;
   }
-  .container-advert .advert .advert-first-column {
+  .container-advert .advert .advert-column {
     width: 100%;
-    margin-bottom: 80px;
   }
-  .container-advert .advert .advert-second-column {
-    width: 100%;
-    margin-top: 80px;
+  .container-advert .advert .advert-column:not(:last-child) {
+    margin-bottom: 80px;
   }
   .slider-column-first .event-text {
     width: 90%;

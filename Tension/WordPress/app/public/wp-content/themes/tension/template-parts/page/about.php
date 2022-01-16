@@ -1,28 +1,64 @@
+<? 
+    $conn = mysqli_connect("localhost","root","root","local");
+    $sql = "SELECT tag, class, content, link, title FROM about";
+    $result = mysqli_query($conn, $sql);
+    $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
     <!-- about -->
     <div class="intern-container">
         <div class="index-about">
             <div class="about-text-side">
                 <div class="about-topic">
-                    <h1>Kdo jsou</h1>
-                    <img src="http://tension.local/wp-content/themes/tension/assets/img/logo-trans-hover.png" alt="logo">
-                    <h1 class="h1-spec">?</h1>
+                    <?
+                        foreach ($datas as $data){
+                            if ($data['tag'] == 'topic'){
+                                    echo '<h1>' . $data['content'] . '</h1>';
+                            }
+                            elseif ($data['tag'] == 'logo'){
+                                    echo '<img src="' . $data['link'] . '" alt="' . $data['title'] . '"></h1>';
+                            }
+                            elseif ($data['tag'] == 'topic_after'){
+                                    echo '<h1 class="' . $data['class'] . '">' . $data['content'] . '</h1>';
+                            }
+                        }
+                    ?>
                 </div>
                 <div class="text">
-                    <p>Banda mladých týpků, kteří vám zaručeně naplní klub</p>
-                    <p>Vytvořili jsme projekt, který se chytnul a vybudovali si značnou komunitu. Brno je naše město a
-                    naši fanoušci to ví. Proto pro ně vytváříme shows jak se patří</p>
-                    <p>Zaměřujeme se převážně na moderní hudbu jako je Hip-Hop a Trap, ale najdete u nás i Pop, Techno
-                    či elektro</p>
+                    <?
+                        foreach ($datas as $data){
+                            if ($data['tag'] == 'text'){
+                                    echo '<p>' . $data['content'] . '</p>';
+                            }
+                        }
+                    ?>
                 </div>
             </div>
             <div class="about-img-side">
                 <div class="img-center">
-                    <img src="http://tension.local/wp-content/themes/tension/assets/img/tension-trans.png" alt="members" class="tension-members">
+                    <?
+                        foreach ($datas as $data){
+                            if ($data['tag'] == 'img'){
+                                    echo '<img src="' . $data['link'] . '" alt="' . $data['title'] . '" class="' . $data['class'] . '">';
+                            }
+                        }
+                    ?>
                 </div>
-                <img src="http://tension.local/wp-content/themes/tension/assets/img/logo-trans-mem.png" alt="logo" class="about-logo-bg">
+                <?
+                    foreach ($datas as $data){
+                        if ($data['tag'] == 'img_back'){
+                                echo '<img src="' . $data['link'] . '" alt="' . $data['title'] . '" class="' . $data['class'] . '">';
+                        }
+                    }
+                ?>
             </div>
         </div>
         <div class="background-effect-one">
-            <img src="http://tension.local/wp-content/themes/tension/assets/img/notes-bg.png" alt="notes">
+            <?
+                foreach ($datas as $data){
+                    if ($data['tag'] == 'notes'){
+                            echo '<img src="' . $data['link'] . '" alt="' . $data['title'] . '">';
+                    }
+                }
+            ?>
         </div>
     </div>

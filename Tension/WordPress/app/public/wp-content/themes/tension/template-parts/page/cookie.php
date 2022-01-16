@@ -1,8 +1,28 @@
+<? 
+    $conn = mysqli_connect("localhost","root","root","local");
+    $sql = "SELECT tag, content, link FROM cookie_alert";
+    $result = mysqli_query($conn, $sql);
+    $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>        
     <!-- cookie -->
     <div class="cookie-alert">
-        <p>Používáním tohoto webu souhlasíte s tím, že využíváme vaše cookies. Více informací najdete v sekci.</p>
+        <? 
+            foreach ($datas as $data){
+                if ($data['tag'] == 'text'){
+                    echo '<p>' . $data['content'] . '</p>';
+                }
+            }
+        ?>
         <div class="button-side">
-            <a href="cookie.html">Cookies</a>
-            <button class="cookie-alert-close">Zavřít</button>
+            <?
+                foreach ($datas as $data){
+                    if ($data['tag'] == 'button'){
+                        echo '<a href="' . $data['link'] . '">' . $data['content'] . '</a>';
+                    }
+                    elseif ($data['tag'] == 'close'){
+                        echo '<button class="cookie-alert-close">' . $data['content'] . '</button>';
+                    }
+                }
+            ?>
         </div>
     </div>

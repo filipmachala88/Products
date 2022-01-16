@@ -1,4 +1,4 @@
-<?php
+<?
     /* CSS import */
     function tension_scripts() {
         wp_enqueue_style( 'stylesheets', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.0' );
@@ -35,3 +35,4 @@
         register_nav_menus($locations);
     }
     add_action('init','tension_menu');
+?>

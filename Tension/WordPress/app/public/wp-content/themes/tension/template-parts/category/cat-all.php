@@ -1,6 +1,6 @@
 <div class="intern-container">
     <div class="img-part">
-        <?php 
+        <?
             $index = 0;
             $no_of_columns = 3;
         
@@ -9,19 +9,17 @@
         ?>
                 <!-- row -->
                 <div class="img-row">
-        <?php
+        <?
             }
         ?>  
             <!-- post -->
             <div class="img-hover">
                 <div class="img">
-                    <?php
-                        the_post_thumbnail();
-                    ?>
+                    <? the_post_thumbnail(); ?>
                 </div>
-                <a href="<?php the_permalink(); ?>" class="element-item">
+                <a href="<? the_permalink(); ?>" class="element-item">
                     <div class="tags-side">
-                        <?php 
+                        <?
                             echo '
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                 y="0px" viewBox="0 0 15.62 21.29" style="enable-background:new 0 0 15.62 21.29;" xml:space="preserve">
@@ -41,17 +39,17 @@
                     </div>
                     <!-- see only admin -->
                     <div class="post-edit">
-                        <?php edit_post_link('upravit'); ?>
+                        <? edit_post_link('upravit'); ?>
                     </div>
                     <div class="text-side">
-                        <h2><?php the_title();?></h2>
-                        <?php the_excerpt();?>
+                        <h2><? the_title();?></h2>
+                        <? the_excerpt();?>
                     </div>
                 </a>
                 <!-- see only admin -->
                 <div class="post-info">
                     <p>
-                        <?php
+                        <?
                             if(current_user_can('administrator')){
                             echo the_time('F jS, Y'). ", ".
                             the_author_posts_link();
@@ -60,20 +58,20 @@
                     </p>
                 </div>
             </div>
-        <?php
+        <?
             $index ++;
             
             if(0 !== $index && 0 === $index % $no_of_columns) {
         ?>
                 </div>
                 <!-- end of row -->
-        <?php
+        <?
             }
         endwhile; else : ?>
 	        <p>
                 <?php esc_html_e( 'Omlouváme se, ale žádný příspěvek neodpovídá vašim požadavkům.' ); ?>
             </p>
-        <?php endif; ?>
+        <? endif; ?>
         </div>
     </div>
 </div>

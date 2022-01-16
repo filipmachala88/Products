@@ -407,13 +407,11 @@
     .container-advert{
         .advert{
             display: block ;
-            .advert-first-column{
+            .advert-column{
                 width: 100% ;
-                margin-bottom: 80px;
-            }
-            .advert-second-column{
-                width: 100% ;
-                margin-top: 80px;
+                &:not(:last-child){
+                    margin-bottom: 80px;
+                }
             }
         }
     }

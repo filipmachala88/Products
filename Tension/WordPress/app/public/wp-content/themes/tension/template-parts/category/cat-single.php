@@ -14,7 +14,7 @@
                     C1.39,11.14,1.23,11.32,1.32,11.47z" />
                 </svg>
                 <span>
-                    <?php 
+                    <?
                         $post_tags = get_the_tags();
                         if ( $post_tags ) {
                             echo $post_tags[0]->name. ", ". $post_tags[1]->name;
@@ -23,7 +23,7 @@
                 </span>
             </div>
             <div class="single-content">
-            <?php
+            <?
                 $var = get_the_content();
                 $content = explode('<!-- wp:shortcode /-->', $var);
                 echo do_shortcode($content[1]);
@@ -32,12 +32,10 @@
         </div>
         <div class="single-column-two">
             <div class="single-img">
-                <?php 
-	                the_post_thumbnail();
-                ?>
+                <? the_post_thumbnail(); ?>
             </div>
             <div class="single-map">
-                <?php
+                <?
                     $var = get_the_content();
                     $content = explode('<!-- wp:shortcode /-->', $var);
                     echo do_shortcode($content[2]);
