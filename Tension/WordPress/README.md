@@ -2,7 +2,7 @@
 
 Status: Still in progress (not done yet)
 
-# Process
+## Process
 
 1. Edit files in accordance with WordPress
 - done
