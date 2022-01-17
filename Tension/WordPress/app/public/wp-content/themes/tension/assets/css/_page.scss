@@ -51,102 +51,124 @@
     }
 }
 // page-category
-.img-part{
-    margin: 50px 0;    
-    a{
-        text-decoration: none;
-        background: rgba(0,0,0,.7);
-    }
-    p{
-        line-height: 1.5;
-    }
-    .img-row{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .img-row:not(:first-child){
-        margin-top: 2.3%;
-    }
-    .img-hover{
-        width: 32%;
-        height: auto;
-        position: relative;
-        display: block;
-        overflow: hidden;
-    }
-    .img-hover:hover img{
-        transition: 0.33s;
-        transform: scale(1.2);
-    }
-    img{
-        width: 100%;
-        height: auto;
-        transition: 0.33s;
-        display: block;
-    }
-    h3{
-        font-size: 15px;
-        color: white;
-    }
-    .element-item{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 5%;
-    }
-    .text-side{
-        position: absolute;
-        left: 5%;
-        top: 50%;
-        h2{
-            font-size: 40px;
-            margin: 0;
-            @include addLight;
+.category{
+    .img-part{
+        margin: 50px 0;    
+        a{
+            text-decoration: none;
+            background: rgba(0,0,0,.7);
         }
         p{
-            font-size: 20px;
+            line-height: 1.5;
+        }
+        .img-row{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .img-row:not(:first-child){
+            margin-top: 2.3%;
+        }
+        .img-hover{
+            width: 32%;
+            height: auto;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .img-hover:hover img{
+            transition: 0.33s;
+            transform: scale(1.2);
+        }
+        img{
+            width: 100%;
+            height: auto;
+            transition: 0.33s;
+            display: block;
+        }
+        h3{
+            font-size: 15px;
+            color: white;
+        }
+        .element-item{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 5%;
+        }
+        .text-side{
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            h2{
+                font-size: 40px;
+                margin: 0;
+                @include addLight;
+            }
+            p{
+                font-size: 20px;
+                @include lightLight;
+            }
+        }
+        .tags-side{
+            display: flex;
+            svg{
+                width: 23px;
+                height: 23px;
+                fill: $tercialyCol;
+                margin: 4px 2px 0 0;
+            }
+            span{
+                font-size: 20px;
+                @include lightLight;
+                margin-left: 10px;
+            }
+        }
+        .post-edit{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            a{
+                background: none;
+                @include addLight;
+                font-size: 20px;
+            }
+        }
+        .post-info{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            p{
+                @include lightLight;    
+            }
+            a{
+                @include addLight;
+                margin-left: 5px;
+            }
+        }
+        .no-post-found{
+            font-size: 25px;
+            @include darkLight;
+        }
+        // galery
+        .galery-item{
+            background: rgba(0,0,0,.7);
+            &:hover{
+                background: rgba(0,0,0,0);
+                transition: 0.33s;
+            }
+        }
+    }
+}
+.category.dark-theme{
+    .img-part{
+        .no-post-found{
+            font-size: 25px;
             @include lightLight;
-        }
-    }
-    .tags-side{
-        display: flex;
-        svg{
-            width: 23px;
-            height: 23px;
-            fill: $tercialyCol;
-            margin: 4px 2px 0 0;
-        }
-        span{
-            font-size: 20px;
-            @include lightLight;
-            margin-left: 10px;
-        }
-    }
-    .post-edit{
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        a{
-            background: none;
-            @include addLight;
-            font-size: 20px;
-        }
-    }
-    .post-info{
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        p{
-            @include lightLight;    
-        }
-        a{
-            @include addLight;
-            margin-left: 5px;
         }
     }
 }
@@ -339,154 +361,87 @@
         }
     }
 }
-// galery.html
-.galery-page{
-    .img-part{
-        margin: 50px 0; 
-        .img-row{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .img-row:not(:first-child){
-            margin-top: 2.3%;
-        }
-        .img-hover{
-            width: 32%;
-            height: auto;
-            position: relative;
-            display: block;
-            overflow: hidden;
-        }
-        .img-hover:hover{
-            img{
-                transform: scale(1);
-            }
-            .element-item{
-                background: $trans;
-                transition: 0.33s;
-            }
-        }
-        img{
-            width: 100%;
-            height: auto;
-            transition: 0.33s;
-            display: block;
-        }
-        h3{
-            font-size: 15px;
-            color: white;
-        }
-        .element-item{
-            background: rgba(0,0,0,.7);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 5%;
-        }
-    }
-}
-// contact.html
+// contact
 .contact{
     width: 100%;
     display: flex;
     margin: 50px 0 0 0;
-    .contact-column-one{
+    .content-col{
         width: 50%;
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            @include darkRegular;
+        }
         .text{
             border-left: 3px solid $tercialyCol;
             padding-left: 30px;
             span{
                 font-size: 25px;
+                display: block;
                 @include darkLight;
             }
         }
-        h1{
-            font-size: 50px;
-            margin-bottom: 20px;
-            @include darkRegular;
-        }
-    }
-    .contact-column-two{
-        width: 50%;
-        .text{
-            border-left: 3px solid $tercialyCol;
-            padding-left: 30px;
-            p{
+        .form{
+            background: $senaryCol;
+            width: 100%;
+            padding: 50px 30px;
+            margin: 40px 0;
+            border-radius: 30px;
+            box-shadow: 0 25px 40px rgba(0,0,0,.5);
+            .form-row{
+                margin-bottom: 10px;
+            }
+            span{
                 font-size: 25px;
                 @include darkLight;
             }
-        }
-        h1{
-            font-size: 50px;
-            margin-bottom: 20px;
-            @include darkRegular;
-        }
-        span{
-            font-size: 25px;
-            @include darkLight;
-        }
-        
-    }
-    .contact-form{
-        background: $senaryCol;
-        width: 100%;
-        padding: 50px 30px;
-        margin: 40px 0;
-        border-radius: 30px;
-        box-shadow: 0 25px 40px rgba(0,0,0,.5);
-        span{
-            font-size: 25px;
-            @include darkLight;
-        }
-        strong{
-            @include addLight;
-            margin: 0 0 0 3px;
-            font-size: 20px;
-        }
-        input, textarea{
-            padding: 5px 10px;
-            margin: 0 0 10px 0;
-            font-size: 20px;
-            outline: none;
-            border: 1px solid $primaryCol;
-            background: $trans;
-            @include darkRegular;
-            &:focus{
-                border: 1px solid $tercialyCol;
-                transition: 0.33s;
+            strong{
+                @include addLight;
+                margin: 0 0 0 3px;
+                font-size: 20px;
             }
-        }
-        input[type="name"]{
-            width: 100%;
-        }
-        input[type="email"]{
-            width: 100%;
-        }
-        textarea{
-            width: 100%;
-            height: 150px;
-        }
-        .contact-form-button{
-            margin: 10px auto 0 auto;
-            @include buttonRulesDark;
-            input[type="submit"]{
-                background: none;
+            input, textarea{
+                padding: 5px 10px;
+                font-size: 20px;
+                outline: none;
+                border: 1px solid $primaryCol;
+                background: $trans;
+                @include darkRegular;
+                &:focus{
+                    border: 1px solid $tercialyCol;
+                    transition: 0.33s;
+                }
+            }
+            input[type="name"]{
                 width: 100%;
-                height: 40px;
-                border: none;
-                font-size: 25px;
-                z-index: 6;
-                margin: 0;
-                padding: 0;
+            }
+            input[type="email"]{
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+                height: 150px;
+            }
+            .form-button{
+                margin: 20px auto 0 auto;
+                @include buttonRulesDark;
+                button{
+                    background: none;
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    font-size: 25px;
+                    z-index: 6;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
     }
 }
 .contact.dark-theme{
-    .contact-column-one{
+    .content-col{
         h1{
             @include lightLight;
         }
@@ -495,17 +450,7 @@
                 @include lightLight;
             }
         }
-    }
-    .contact-column-two{
-        h1{
-            @include lightLight;
-        }
-        .text{
-            p{
-                @include lightLight;
-            }
-        }
-        .contact-form{
+        .form{
             background: $quaternaryCol;
             span{
                 font-size: 25px;
@@ -518,10 +463,9 @@
                     border: 1px solid $tercialyCol;
                 }
             }
-            .contact-form-button{
-                @include buttonRulesLight;
-                input[type="submit"]{
-                    border: none;
+            .form-button{
+                button{
+                    @include lightLight;
                 }
             }
         }
@@ -744,44 +688,6 @@
         }
     }
 }
-// === cookie.html, terms.html ===
-.cookies-content, .terms-content{
-    padding: 50px 0 60px 0;
-    .row{
-        ul{
-            list-style: decimal;
-        }
-        ol{
-            list-style: upper-alpha;
-        }
-        h2{
-            font-size: 40px;
-            @include darkRegular;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size: 25px;
-            @include darkLight;
-        }
-        a{
-            font-size: 25px;
-            @include addRegular;
-            text-decoration: none;
-            &:hover{
-                color: $false;
-                transition: 0.33s;
-            }
-        }
-        &:not(:last-child){
-            margin-bottom: 30px;
-        }
-    }
-}
-.terms-content{
-    ul{
-        padding-left: 28px;
-    }
-}
 .profile{
     .intern-container{
         display: flex;
@@ -919,6 +825,42 @@
                 color: $tercialyCol;
                 transition: 0.33s;
             }
+        }
+    }
+}
+.text-page{
+    .content{
+        padding: 50px 0 60px 0;
+        h2{
+            font-size: 40px;
+            @include addRegular;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 25px;
+            @include darkLight;
+            margin-bottom: 20px;
+        }
+        li{
+            font-size: 25px;
+            @include darkLight;
+        }
+        a{
+            font-size: 25px;
+            @include addRegular;
+            text-decoration: none;
+            &:hover{
+                color: $false;
+                transition: 0.33s;
+            }
+        }
+    }
+}
+.text-page.dark-theme{
+    .content{
+        p, li{
+            font-size: 25px;
+            @include lightLight;
         }
     }
 }

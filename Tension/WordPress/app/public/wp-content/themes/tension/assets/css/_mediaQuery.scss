@@ -283,13 +283,15 @@
         }
     }
     // == events ==
-    .img-part{
-        margin: 60px 0;
-        .img-row{
-            display: block;
-            .img-hover{
-                width: 100%;
-                margin-bottom: 30px;
+    .category{
+        .img-part{
+            margin: 60px 0;
+            .img-row{
+                display: block;
+                .img-hover{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
@@ -383,12 +385,9 @@
     // contact page
     .contact{
         display: block;
-        .contact-column-one{
+        .content-col{
             width: 100%;
             margin-bottom: 50px;
-        }
-        .contact-column-two{
-            width: 100%;
         }
     }
     // search-bar
@@ -449,11 +448,13 @@
         }
     }
     // events
-    .img-part{
-        margin: 25px 0;
-        .img-row{
-            .img-hover{
-                margin-bottom: 25px;
+    .category{
+        .img-part{
+            margin: 25px 0;
+            .img-row{
+                .img-hover{
+                    margin-bottom: 25px;
+                }
             }
         }
     }
@@ -550,11 +551,13 @@
         }
     }
     // events
-    .img-part{
-        margin: 20px 0;
-        .img-row{
-            .img-hover{
-                margin-bottom: 20px;
+    .category{
+        .img-part{
+            margin: 20px 0;
+            .img-row{
+                .img-hover{
+                    margin-bottom: 20px;
+                }
             }
         }
     }

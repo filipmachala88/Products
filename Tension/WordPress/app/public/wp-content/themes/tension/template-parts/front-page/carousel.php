@@ -9,6 +9,7 @@
         protože jste nechtěně vyselectoval blob, či někdo do DB přidá sloupec,
         jehož obsah někde jinde pozmění zpracování)
     */
+    // SELECT - column in DB, can not have "text" (prob. some internal code shortcut), row can
     $sql = "SELECT tag, class, topic, descr, note_one, note_two, button_link, button_text, icon, img, img_alt FROM carousel";
     $result = mysqli_query($conn, $sql);
     $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);

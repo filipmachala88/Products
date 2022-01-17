@@ -63,38 +63,27 @@
             <div class="nav-logo-part">
                 <div>
                     <div class="logo-box">
-                        <?php
-                            foreach ($datas as $data){
-                                if ($data['tag'] == 'logo-link'){
-                                        echo '<a href="' . $data['link'] . '" title="' . $data['title'] . '">';
-                                }
-                            }
-                            foreach ($datas as $data){
-                                if ($data['tag'] == 'logo-image'){
-                                        echo '
-                                        <div class="logo-contain ' . $data['class'] . '">
-                                            <img src="' . $data['link'] . '">
-                                        </div>';
-                                }
-                            }
-                            echo '</a>';
-                        ?>
+                        <?  foreach ($datas as $data){
+                                if ($data['tag'] == 'logo-link'){ ?>
+                                    <a href="<? echo $data['link']; ?>" title="<? echo $data['title']; ?>">
+                            <?  }
+                                if ($data['tag'] == 'logo-image'){ ?>
+                                    <div class="logo-contain <? echo $data['class']; ?>">
+                                        <img src="<? echo $data['link']; ?>" alt="<? echo $data['title']; ?>">
+                                    </div>
+                            <?  }}  ?>
+                                    </a>
                     </div>
-                    <span>
-                        <?php 
-                            foreach ($datas as $data){
-                                if ($data['tag'] == 'logo-text'){
-                                    echo '<span>' . $data['content'] . '</span>';
-                                }
-                            }
-                        ?>
-                    </span>
+                    <?  foreach ($datas as $data){
+                            if ($data['tag'] == 'logo-text'){ ?>
+                                <span><? echo $data['content']; ?></span>
+                    <?  }}  ?>
                 </div>
             </div>
             <!-- navigation -->
             <div class="navigation">
                 <ul>
-                    <?php
+                    <?
                         wp_nav_menu(
                             array(
                                 'menu' => 'header_menu',
@@ -106,38 +95,34 @@
             <!-- icon menu -->
             <div class="eshop-part">
                 <ul>
-                    <?php 
-                        foreach ($datas as $data){
-                            if ($data['tag'] == 'icon-menu-spec'){
-                                echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
-
-                            }
-                            elseif ($data['tag'] == 'icon-menu'){
-                                echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
-                                            <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
-
-                            }
-                        }
-                    ?>
+                    <?  foreach ($datas as $data){
+                            if ($data['tag'] == 'icon-menu-spec'){ ?>
+                                <li class="<? echo $data['class'] ?>" title="<? echo $data['title'] ?>"><? echo $data['icon'] ?></li>
+                        <?  }
+                            elseif ($data['tag'] == 'icon-menu'){ ?>
+                                <li class="<? echo $data['class'] ?>" title="<? echo $data['title'] ?>">
+                                    <a href="<? echo $data['link'] ?>"><? echo $data['icon'] ?></a>
+                                </li>
+                    <?  }}  ?>
                 </ul>
             </div>
             <!-- header responsive -->
             <div class="nav-responsive">
                 <div class="eshop-part-resp">
                     <ul>
-                        <?php 
-                            foreach ($datas as $data){
-                                if ($data['tag'] == 'icon-menu-spec'){
-                                    echo '<li class="' . $data['class'] . '-resp" title="' . $data['title'] . '">' . $data['icon'] . '</li>';
-
-                                }
-                                elseif ($data['tag'] == 'icon-menu'){
-                                    echo '<li class="' . $data['class'] . '" title="' . $data['title'] . '">
-                                                <a href="' . $data['link'] . '">' . $data['icon'] . '</a></li>';
-
-                                }
-                            }
-                        ?>
+                        <?  foreach ($datas as $data){
+                                if ($data['tag'] == 'icon-menu-spec'){ ?>
+                                    <li class="<? echo $data['class']; ?>-resp" title="<? echo $data['title']; ?>">
+                                        <? echo $data['icon']; ?>
+                                    </li>
+                            <?  }
+                                elseif ($data['tag'] == 'icon-menu'){ ?>
+                                    <li class="<? echo $data['class']; ?>" title="<? echo $data['title']; ?>">
+                                        <a href="<? echo $data['link']; ?>">
+                                            <? echo $data['icon']; ?>
+                                        </a>
+                                    </li>
+                        <?  }}  ?>
                     </ul>
                 </div>
                 <!-- hamburger -->
@@ -155,14 +140,12 @@
                     <div class="nav-sidebar-search">
                         <? get_search_form(); ?>
                     </div>
-                    <?
-                        foreach ($datas as $data){
-                            if ($data['tag'] == 'side-bar'){
-                                echo '<div class="' . $data['class'] . '" title="' . $data['title'] . '">' . $data['icon'] . '</div>';
-
-                            }
-                        }
-                    ?>
+                    <?  foreach ($datas as $data){
+                            if ($data['tag'] == 'side-bar'){ ?>
+                                <div class="<? echo $data['class']; ?>" title="<? echo $data['title']; ?>">
+                                    <? echo $data['icon']; ?>
+                                </div>
+                    <?  }}  ?>
                 </div>
             </div>
         </div>

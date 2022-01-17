@@ -50,7 +50,7 @@
                 background: $primaryCol;
                 display: flex;
                 border-radius: 40px;
-                .light-theme{
+                .theme-light{
                     padding: 5px 5px 7px 8px;
                     cursor: pointer;
                     svg{
@@ -59,7 +59,7 @@
                         width: 25px;
                     }
                 }
-                .dark-theme{
+                .theme-dark{
                     padding: 5px 8px 7px 5px;
                     cursor: pointer;
                     svg{

@@ -1,6 +1,5 @@
 <? 
     $conn = mysqli_connect("localhost","root","root","local");
-    // SELECT - column in DB, can not have "text" (prob. some internal code shortcut), row can
     $sql = "SELECT tag, topic, descr, img_link, img_title, button_link, button_text, icon FROM advert";
     $result = mysqli_query($conn, $sql);
     $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);

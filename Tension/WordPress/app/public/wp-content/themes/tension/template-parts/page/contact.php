@@ -1,40 +1,66 @@
-<div class="intern-container">
-    <div class="contact">
-        <div class="contact-column-one">
-            <h1>Kontakt</h1>
-            <div class="text">
-                <span>Adam Kriegel<br>adamkriegel@seznam.cz<br>256 585 952</span>
+<?php 
+    $conn = mysqli_connect("localhost","root","root","local");
+    $sql = "SELECT tag, input, input_type, input_name, content FROM contact";
+    $result = mysqli_query($conn, $sql);
+    $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
+    <!-- content -->
+    <div class="intern-container">
+        <div class="contact">
+            <div class="content-col">
+                <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'topic'){ ?>
+                            <h1>
+                                <? echo $data['content'] ?>
+                            </h1>
+                <?  }}  ?>
+                <div class="text">
+                    <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'text'){ ?>
+                            <span>
+                                <? echo $data['content'] ?>
+                            </span>
+                    <?  }}  ?>
+                </div>
             </div>
-        </div>
-        <div class="contact-column-two">
-            <h1>Chcete spolupráci?</h1>
-            <div class="text">
-                <p>Vyplňte formulář a my se vám brzy ozveme</p>
-            </div>
-            <!-- form -->
-            <div class="contact-form">
-                <form method="post">
-                    <div class="contact-form-forname">
-                        <span>Jméno<strong>*</strong></span>
-                        <input type="name" name="forename">
-                    </div>
-                    <div class="contact-form-surname">
-                        <span>Přijmení<strong>*</strong></span>
-                        <input type="name" name="surname">
-                    </div>
-                    <div class="contact-form-mail">
-                        <span>E-mail<strong>*</strong></span>
-                        <input type="email" name="email">
-                    </div>
-                    <div class="contact-form-desc">
-                        <span>Krátce o spolupráci<strong>*</strong></span>
-                        <textarea name="description"></textarea>
-                    </div>
-                    <div class="contact-form-button">
-                        <input type="submit" value="Odeslat" name="sent" onclick="e.preventDefault()">
-                    </div>
-                </form>
+            <div class="content-col">
+                <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'topic_form'){ ?>
+                            <h1>
+                                <? echo $data['content'] ?>
+                            </h1>
+                <?  }}  ?>
+                <div class="text">
+                    <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'text_form'){ ?>
+                            <span>
+                                <? echo $data['content'] ?>
+                            </span>
+                    <?  }}  ?>
+                </div>
+                <!-- form -->
+                <div class="form">
+                    <form method="post">
+                        <?  foreach ($datas as $data){
+                            if ($data['tag'] == 'form'){ ?>
+                                <div class="form-row">
+                                    <span>
+                                        <? echo $data['content'] ?>
+                                        <strong>*</strong>
+                                    </span>
+                                    <<? echo $data['input'] ?> type="<? echo $data['input_type'] ?>" name="<? echo $data['input_name'] ?>"></<? echo $data['input'] ?>>
+                                </div>
+                        <?  }}  ?>
+                        <div class="form-button">
+                            <?  foreach ($datas as $data){
+                                if ($data['tag'] == 'button'){ ?>
+                                    <button type="submit" name="sent">
+                                        <? echo $data['content'] ?>
+                                    </button>
+                            <?  }}  ?>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>

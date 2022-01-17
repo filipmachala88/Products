@@ -6,23 +6,23 @@
 ?>        
     <!-- cookie -->
     <div class="cookie-alert">
-        <? 
-            foreach ($datas as $data){
-                if ($data['tag'] == 'text'){
-                    echo '<p>' . $data['content'] . '</p>';
-                }
-            }
-        ?>
+        <?  foreach ($datas as $data){
+                if ($data['tag'] == 'text'){ ?>
+                    <p>
+                        <? echo $data['content'] ?>
+                    </p>
+        <?  }}  ?>
         <div class="button-side">
-            <?
-                foreach ($datas as $data){
-                    if ($data['tag'] == 'button'){
-                        echo '<a href="' . $data['link'] . '">' . $data['content'] . '</a>';
-                    }
-                    elseif ($data['tag'] == 'close'){
-                        echo '<button class="cookie-alert-close">' . $data['content'] . '</button>';
-                    }
-                }
-            ?>
+            <?  foreach ($datas as $data){
+                    if ($data['tag'] == 'button'){ ?>
+                        <a href="<? echo $data['link'] ?>">
+                            <? echo $data['content'] ?>
+                        </a>
+                <?  }
+                    elseif ($data['tag'] == 'close'){ ?>
+                        <button class="cookie-alert-close">
+                            <? echo $data['content'] ?>
+                        </button>
+            <?  }}  ?>
         </div>
     </div>

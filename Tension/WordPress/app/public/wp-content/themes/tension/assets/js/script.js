@@ -23,7 +23,7 @@ function cookieWindow(){
     }
 }
 cookieWindow();
-/*
+
 function windowClose(){
     var cookieWindow = document.querySelector( ".cookie-alert" );
     if ( cookieWindow ){
@@ -35,7 +35,6 @@ function windowClose(){
     }
 }
 windowClose();
-*/
 
 // === HEADER SCRIPTS ===
 
@@ -194,6 +193,10 @@ function darkMode(){
     var cartPage = document.querySelector( ".cart" );
     // == profile ==
     var profilePage = document.querySelector( ".profile" );
+    // == text page ==
+    var textPage = document.querySelector( ".text-page" );
+    // == category ==
+    var categoryPage = document.querySelector( ".category" );
 
     document.body.style.backgroundColor = "#191919";
     ball.style = "transform: translateX(35px)";
@@ -221,6 +224,12 @@ function darkMode(){
     if ( profilePage ){
         profilePage.classList.add( theme );
     }
+    if ( textPage ){
+        textPage.classList.add( theme );
+    }
+    if ( categoryPage ){
+        categoryPage.classList.add( theme );
+    }
 }
 function lightMode(){
     var ball = document.querySelector(".ball");
@@ -246,6 +255,10 @@ function lightMode(){
     var cartPage = document.querySelector( ".cart" );
     // == profile ==
     var profilePage = document.querySelector( ".profile" );
+    // == text page ==
+    var textPage = document.querySelector( ".text-page" );
+    // == category ==
+    var categoryPage = document.querySelector( ".category" );
 
     document.body.style.backgroundColor = "#f0f0f0";
     ball.style = "transform: translateX(0px)";
@@ -273,6 +286,12 @@ function lightMode(){
     if ( profilePage ){
         profilePage.classList.remove( theme );
     }
+    if ( textPage ){
+        textPage.classList.remove( theme );
+    }
+    if ( categoryPage ){
+        categoryPage.classList.remove( theme );
+    }
 }
 // local storage
 function themeSwap(){
@@ -288,8 +307,8 @@ function themeSwap(){
 themeSwap();
 // theme button
 function themeButton(){
-    var buttonLight = document.querySelector(".light-theme");
-    var buttonDark = document.querySelector(".dark-theme");
+    var buttonLight = document.querySelector(".theme-light");
+    var buttonDark = document.querySelector(".theme-dark");
     
     buttonLight.addEventListener("click", () => {
         localStorage.setItem("theme","light");

@@ -10,6 +10,7 @@
     }
     elseif (is_page()){
         get_template_part('template-parts/page/topic','topic');
+        get_template_part('template-parts/page/text','text');
     }
 
     get_footer();

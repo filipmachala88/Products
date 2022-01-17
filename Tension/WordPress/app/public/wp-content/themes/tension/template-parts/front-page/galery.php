@@ -7,33 +7,30 @@
     <!-- galery -->
     <div class="intern-container">
         <div class="background-effect-two">
-            <img src="http://tension.local/wp-content/themes/tension/assets/img/notes-bg.png" alt="notes">
+            <?  foreach ($datas as $data){
+                    if ($data['tag'] == 'notes'){ ?>
+                        <img src="<? echo $data['link'] ?>" alt="<? echo $data['title'] ?>">
+            <?  }}  ?>
         </div>
         <div class="galery">
             <div class="topic">
-                <?
-                    foreach ($datas as $data){
-                        if ($data['tag'] == 'topic'){
-                            echo '<h1>' . $data['content'];
-                        }
-                        elseif ($data['tag'] == 'topic_spec'){
-                            echo ' <strong>' . $data['content'] . '</strong> ';
-                        }
-                        elseif ($data['tag'] == 'topic_after'){
-                            echo $data['content'] . '</h1>';
-                        }
-                    }
-                ?>
+                <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'topic'){ ?>
+                            <h1><? echo $data['content'] ?>
+                    <?  }
+                        elseif ($data['tag'] == 'topic_spec'){ ?>
+                            <strong><? echo $data['content'] ?></strong>
+                    <?  }
+                        elseif ($data['tag'] == 'topic_after'){ ?>
+                            <? echo $data['content'] ?></h1>
+                <?  }}  ?>
             </div>
             <div class="galery-text">
                 <div class="text-one">
-                    <?
-                        foreach ($datas as $data){
-                            if ($data['tag'] == 'descr'){
-                                echo '<p>' . $data['content'] . '</p>';
-                            }
-                        }
-                    ?>
+                    <?  foreach ($datas as $data){
+                            if ($data['tag'] == 'descr'){ ?>
+                                <p><? echo $data['content'] ?></p>
+                    <?  }}  ?>
                 </div>
             </div>
             <div class="galery-images">
@@ -50,7 +47,7 @@
                                         </div>
                                     </div>
                                 </div>
-                    <? }} ?>
+                    <?  }}  ?>
                 </div>
                 <div class="galery-images-resp">
                     <?  foreach ($datas as $data){
@@ -65,17 +62,18 @@
                                         </div>
                                     </div>
                                 </div>
-                    <? }} ?>
+                    <?  }}  ?>
                 </div>
             </div>
             <div class="button-href">
-                <?  
-                    foreach ($datas as $data){
-                        if ($data['tag'] == 'button'){ 
-                            echo '<a href="' . $data['link'] . '"><div class="galery-button"><span>' . $data['content'] . '</span></div></a>';
-                        }
-                    }
-                ?>
+                <?  foreach ($datas as $data){
+                        if ($data['tag'] == 'button'){ ?>
+                            <a href="<? echo $data['link'] ?>">
+                                <div class="galery-button">
+                                    <span><? echo $data['content'] ?></span>
+                                </div>
+                            </a>
+                <?  }}  ?>
             </div>
         </div>
     </div>
