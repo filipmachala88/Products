@@ -4,7 +4,7 @@ Status: Still in progress
 
 ## Process
 
-1. Edit files in accordance with WordPress (using [PHP](https://www.php.net/))
+(1) Edit files in accordance with WordPress (using [PHP](https://www.php.net/))
 DONE
 
 Theme path (code): app/public/wp-content/themes/tension
