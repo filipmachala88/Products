@@ -53,7 +53,7 @@
 // page-category
 .category{
     .img-part{
-        margin: 50px 0;    
+        margin: 50px 0;
         a{
             text-decoration: none;
             background: rgba(0,0,0,.7);
@@ -64,7 +64,6 @@
         .img-row{
             display: flex;
             width: 100%;
-            justify-content: space-between;
         }
         .img-row:not(:first-child){
             margin-top: 2.3%;
@@ -75,6 +74,7 @@
             position: relative;
             display: block;
             overflow: hidden;
+            margin: 0 0.5%;
         }
         .img-hover:hover img{
             transition: 0.33s;
@@ -142,12 +142,26 @@
             bottom: 0;
             display: flex;
             justify-content: center;
+            background: rgba(0,0,0,.8);
             p{
                 @include lightLight;    
             }
             a{
                 @include addLight;
                 margin-left: 5px;
+            }
+            span{
+                font-size: 16px;
+                display: block;
+            }
+            span:not(:first-child){
+                margin-left: 10px;
+            }
+            .date{
+                @include lightLight;
+            }
+            .admin{
+                @include addLight;
             }
         }
         .no-post-found{
@@ -156,6 +170,11 @@
         }
         // galery
         .galery-item{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0,0,0,.7);
             &:hover{
                 background: rgba(0,0,0,0);

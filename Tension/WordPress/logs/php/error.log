@@ -2089,3 +2089,114 @@
 [17-Jan-2022 18:20:58 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 17
 [17-Jan-2022 18:20:59 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 17
 [17-Jan-2022 18:21:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 17
+[19-Jan-2022 18:29:57 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 56
+[19-Jan-2022 18:29:57 UTC] PHP Stack trace:
+[19-Jan-2022 18:29:57 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[19-Jan-2022 18:29:57 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[19-Jan-2022 18:29:57 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[19-Jan-2022 18:29:57 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[19-Jan-2022 18:29:57 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\category.php:5
+[19-Jan-2022 18:29:57 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[19-Jan-2022 18:29:57 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[19-Jan-2022 18:29:57 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[19-Jan-2022 18:29:59 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 56
+[19-Jan-2022 18:29:59 UTC] PHP Stack trace:
+[19-Jan-2022 18:29:59 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[19-Jan-2022 18:29:59 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[19-Jan-2022 18:29:59 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[19-Jan-2022 18:29:59 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[19-Jan-2022 18:29:59 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\category.php:5
+[19-Jan-2022 18:29:59 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[19-Jan-2022 18:29:59 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[19-Jan-2022 18:29:59 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[19-Jan-2022 18:30:08 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 56
+[19-Jan-2022 18:30:08 UTC] PHP Stack trace:
+[19-Jan-2022 18:30:08 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[19-Jan-2022 18:30:08 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[19-Jan-2022 18:30:08 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[19-Jan-2022 18:30:08 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[19-Jan-2022 18:30:08 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\category.php:5
+[19-Jan-2022 18:30:08 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[19-Jan-2022 18:30:08 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[19-Jan-2022 18:30:08 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[19-Jan-2022 18:30:09 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 56
+[19-Jan-2022 18:30:09 UTC] PHP Stack trace:
+[19-Jan-2022 18:30:09 UTC] PHP   1. {main}() C:\Users\filip\Local Sites\tension\app\public\index.php:0
+[19-Jan-2022 18:30:09 UTC] PHP   2. require() C:\Users\filip\Local Sites\tension\app\public\index.php:17
+[19-Jan-2022 18:30:09 UTC] PHP   3. require_once() C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php:19
+[19-Jan-2022 18:30:09 UTC] PHP   4. include() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php:106
+[19-Jan-2022 18:30:09 UTC] PHP   5. get_template_part() C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\category.php:5
+[19-Jan-2022 18:30:09 UTC] PHP   6. locate_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php:204
+[19-Jan-2022 18:30:09 UTC] PHP   7. load_template() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:716
+[19-Jan-2022 18:30:09 UTC] PHP   8. require() C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php:772
+[19-Jan-2022 18:49:00 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:49:24 UTC] PHP Parse error:  syntax error, unexpected ':' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:49:25 UTC] PHP Parse error:  syntax error, unexpected ':' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:49:31 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 119
+[19-Jan-2022 18:49:40 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 123
+[19-Jan-2022 18:50:01 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:51:06 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:51:06 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:51:07 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:51:07 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:51:59 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 110
+[19-Jan-2022 18:52:00 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 110
+[19-Jan-2022 18:52:08 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 18:52:09 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 115
+[19-Jan-2022 19:00:20 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-single.php on line 18
+[19-Jan-2022 19:06:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_current_menu_item() in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-single.php:12
+Stack trace:
+#0 C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php(772): require()
+#1 C:\Users\filip\Local Sites\tension\app\public\wp-includes\template.php(716): load_template('C:\\Users\\filip\\...', false, Array)
+#2 C:\Users\filip\Local Sites\tension\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\single.php(5): get_template_part('template-parts/...', 'cat-single')
+#4 C:\Users\filip\Local Sites\tension\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\filip\\...')
+#5 C:\Users\filip\Local Sites\tension\app\public\wp-blog-header.php(19): require_once('C:\\Users\\filip\\...')
+#6 C:\Users\filip\Local Sites\tension\app\public\index.php(17): require('C:\\Users\\filip\\...')
+#7 in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-single.php on line 12
+[20-Jan-2022 18:02:20 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\galery.php on line 52
+[20-Jan-2022 18:02:21 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\page\galery.php on line 52
+[20-Jan-2022 18:07:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:03 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:05 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:05 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:05 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 14
+[20-Jan-2022 18:08:13 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:19 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:23 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:23 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:45 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:45 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:46 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:46 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:46 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:46 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:46 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[20-Jan-2022 18:08:47 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\template-parts\category\cat-all.php on line 97
+[21-Jan-2022 12:01:50 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:01:52 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:01:54 UTC] PHP Parse error:  syntax error, unexpected '?>' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:03:53 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:03:54 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:19 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:20 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:20 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:22 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:22 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:22 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:22 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:04:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:08:18 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 100
+[21-Jan-2022 12:10:40 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:19 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:20 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:21 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:21 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:21 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103
+[21-Jan-2022 12:11:21 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\filip\Local Sites\tension\app\public\wp-content\themes\tension\header.php on line 103

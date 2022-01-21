@@ -1677,9 +1677,6 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .category .img-part .img-row:not(:first-child) {
@@ -1692,6 +1689,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   position: relative;
   display: block;
   overflow: hidden;
+  margin: 0 0.5%;
 }
 
 .category .img-part .img-hover:hover img {
@@ -1789,6 +1787,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .category .img-part .post-info p {
@@ -1804,6 +1803,27 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   margin-left: 5px;
 }
 
+.category .img-part .post-info span {
+  font-size: 16px;
+  display: block;
+}
+
+.category .img-part .post-info span:not(:first-child) {
+  margin-left: 10px;
+}
+
+.category .img-part .post-info .date {
+  color: #f0f0f0;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+}
+
+.category .img-part .post-info .admin {
+  color: #ff88af;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+}
+
 .category .img-part .no-post-found {
   font-size: 25px;
   color: #191919;
@@ -1812,6 +1832,11 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
 }
 
 .category .img-part .galery-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
 

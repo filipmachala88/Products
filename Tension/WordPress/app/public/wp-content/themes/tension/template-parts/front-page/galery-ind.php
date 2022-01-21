@@ -1,6 +1,6 @@
 <? 
     $conn = mysqli_connect("localhost","root","root","local");
-    $sql = "SELECT tag, topic, content, link, title FROM galery";
+    $sql = "SELECT tag, topic, content, link, title FROM galery_ind";
     $result = mysqli_query($conn, $sql);
     $datas = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>    

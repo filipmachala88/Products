@@ -97,11 +97,11 @@
                 <ul>
                     <?  foreach ($datas as $data){
                             if ($data['tag'] == 'icon-menu-spec'){ ?>
-                                <li class="<? echo $data['class'] ?>" title="<? echo $data['title'] ?>"><? echo $data['icon'] ?></li>
+                                <li class="<? echo $data['class']; if (is_search()){ echo ' ' . 'page-active'; } ?>" title="<? echo $data['title']; ?>"><? echo $data['icon']; ?></li>
                         <?  }
                             elseif ($data['tag'] == 'icon-menu'){ ?>
-                                <li class="<? echo $data['class'] ?>" title="<? echo $data['title'] ?>">
-                                    <a href="<? echo $data['link'] ?>"><? echo $data['icon'] ?></a>
+                                <li class="<? echo $data['class']; if ($data['title'] === 'Košík' && is_page('kosik')){ echo ' ' . 'page-active'; }elseif ($data['title'] === 'Profil' && is_page('profil')){ echo ' ' . 'page-active'; } ?>" title="<? echo $data['title']; ?>">
+                                    <a href="<? echo $data['link']; ?>"><? echo $data['icon']; ?></a>
                                 </li>
                     <?  }}  ?>
                 </ul>
@@ -112,12 +112,12 @@
                     <ul>
                         <?  foreach ($datas as $data){
                                 if ($data['tag'] == 'icon-menu-spec'){ ?>
-                                    <li class="<? echo $data['class']; ?>-resp" title="<? echo $data['title']; ?>">
+                                    <li class="<? echo $data['class'] . '-resp'; if (is_search()){ echo ' ' . 'page-active'; } ?>" title="<? echo $data['title']; ?>">
                                         <? echo $data['icon']; ?>
                                     </li>
                             <?  }
                                 elseif ($data['tag'] == 'icon-menu'){ ?>
-                                    <li class="<? echo $data['class']; ?>" title="<? echo $data['title']; ?>">
+                                    <li class="<? echo $data['class']; if ($data['title'] === 'Košík' && is_page('kosik')){ echo ' ' . 'page-active'; }elseif ($data['title'] === 'Profil' && is_page('profil')){ echo ' ' . 'page-active'; }?>" title="<? echo $data['title']; ?>">
                                         <a href="<? echo $data['link']; ?>">
                                             <? echo $data['icon']; ?>
                                         </a>
