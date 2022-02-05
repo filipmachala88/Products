@@ -13,7 +13,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta tag of responsivity -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag of key words -->
+    <meta name="keywords" content="Tension, Brno, Hudba, Akce">
+    <!-- meta tag of image, title & description displayed in social. site share -->
+    <meta name="og:title" content="Tension - insert into controller">
+    <meta name="og:description" content="Tension">
+    <meta name="og:image" content="">
+    <!-- other meta tags -->
+    <meta name="og:locale" content="cs_CZ">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="http://tension.local/">
+    <meta name="og:site_name" content="Tension">
     <!-- Google Fonts import script -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;500;700&display=swap');
@@ -24,7 +36,11 @@
     <!-- Bootstrap stylesheet import link (extern) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- Title "favicon" image -->
+    <link rel="icon" href=""/>
+    <!-- wp head start -->
 	<? wp_head(); ?>
+    <!-- wp head end -->
     <title>
         <?
             if (is_front_page()){
