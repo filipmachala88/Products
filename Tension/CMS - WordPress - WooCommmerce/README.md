@@ -19,6 +19,6 @@ Status: Still in progress
 - not learned yet (have to learn)
 
 (4) Finish project
-- work-test (if page works properly without errors & bugs)
+- functionality check (if page works properly without errors & bugs)
 
 
